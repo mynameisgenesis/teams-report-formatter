@@ -22,3 +22,5 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+teams-report-formatter/
+teams-report-formatter.zip
