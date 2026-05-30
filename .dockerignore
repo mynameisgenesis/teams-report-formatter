@@ -1,0 +1,9 @@
+node_modules
+teams-report-formatter
+teams-report-formatter.zip
+dist
+dist-ssr
+.git
+.DS_Store
+*.log
+*.local

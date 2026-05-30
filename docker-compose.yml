@@ -1,0 +1,16 @@
+services:
+  teams-report-formatter:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: teams-report-formatter
+    restart: unless-stopped
+    ports:
+      - "${TEAMS_REPORT_FORMATTER_PORT:-8081}:80"
+    networks:
+      - mainframe
+
+networks:
+  mainframe:
+    name: ${MAINFRAME_NETWORK:-mainframe}
+    external: true
